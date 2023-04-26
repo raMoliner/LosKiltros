@@ -10,134 +10,139 @@
     <title>Boleta</title>
 </head>
 <body>
-    <!-- Barra de navegación-->
-    <nav class="navbar navbar-dark navbar-expand-lg opacity-75" style="background-color: darkmagenta;">
-        <div class="container-fluid">
-             <a class="navbar-brand" href="Nosotros.html"> <!-- Logo -->
-                <img src="IMG/logopng.png" alt="Logo" width="45" height="44" class="d-inline-block align-text-top">
-                </a> 
-          <a class="navbar-brand" href="Nosotros.html">LOS KILTROS</a> 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="home" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a><!--Inicio-->
-                  </li>
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="Nosotros.html">Sobre Nosotros</a> <!--Registro-->
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="misDatos.html">Mis Datos</a> <!-- Mis datos -->
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="misCompras.html">Mis Compras anteriores</a> <!-- Mis Compras -->
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="Index.html">Cerrar Sesión</a> <!-- Cierre Sesión -->
-              </li>
-            </ul>
-            <form class="d-flex" role="search"> <!--Barra de Busqueda-->
-              <input class="form-control me-2" type="search" placeholder="Comida, juguetes, ropa..." aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    <div class="container-fluid"> <!-- Boleta -->
-        <style>
-            
-            .boleta {
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-                padding: 20px;
-                width: 400px;
-                margin: 20px auto;
-                font-family: Arial, sans-serif;
-                font-size: 14px;
-            }
-            
-            .boleta h2 {
-                margin-top: 0;
-            }
-            
-            .boleta table {
-                width: 100%;
-                border-collapse: collapse;
-                margin-bottom: 20px;
-            }
-            
-            .boleta table td,
-            .boleta table th {
-                padding: 8px;
-                border: 1px solid #ccc;
-                text-align: left;
-            }
-            
-            .boleta table th {
-                background-color: #f2f2f2;
-            }
-            
-            .boleta .total {
-                font-weight: bold;
-            }
-        </style>
-    </head>
-    <body>
-        <!-- Contenedor de la boleta -->
-        <div class="boleta">
-            <!-- Encabezado de la boleta -->
-            <h2>Boleta</h2>
-            <p>Avenida siempre viva, Santiago</p>
-            
-            <!-- Detalle de la compra -->
-            <table>
-                <thead>
-                    <tr>
-                        <th>Producto</th>
-                        <th>Precio</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>COMIDA PERRO PEDIGREE
-                        </td>
-                        <td>$24.000</td>
-                    </tr>
-                    <tr>
-                        <td>COMIDA PERRO DOG CHOW
-                        </td>
-                        <td>$24.000</td>
-                    </tr>
-                    <tr>
-                        <td>COMIDA PERRO CHAMPION DOG
-                        </td>
-                        <td>$24.000</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td class="total">Total:</td>
-                        <td class="total">$72.000</td>
-                    </tr>
-                </tfoot>
-            </table>
-            
-            <!-- Pie de página de la boleta -->
-            <p>Gracias por su compra.</p>
-        </div>
-      
     
+    <header>
+        <!-- Barra de navegación-->
+        <nav class="navbar navbar-dark navbar-expand-lg opacity-75" style="background-color: darkmagenta;">
+          <div class="container-fluid">
+               <a class="navbar-brand" href="Nosotros.html"> <!-- Logo -->
+                  <img src="IMG/logopng.png" alt="Logo" width="45" height="44" class="d-inline-block align-text-top">
+                  </a> 
+            <a class="navbar-brand" href="Nosotros.html">LOS KILTROS</a> 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="home" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a><!--Inicio-->
+                    </li>
+                  <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="Registro.html">Registrarse</a> <!--Registro-->
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="Nosotros.html">Sobre nosotros</a> <!-- Nosotros -->
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Ingresar a mi cuenta
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Ingresar.html">Iniciar Sesión</a></li>
+                    <li><a class="dropdown-item" href="#">Recuperar Contraseña</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">¿Necesitas Ayuda?</a></li>
+                  </ul>
+                </li>
+        
+              </ul>
+              <form class="d-flex" role="search"> <!--Barra de Busqueda-->
+                <input class="form-control me-2" type="search" placeholder="Comida, juguetes, ropa..." aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
       
+      </header>
+
+            
+
+<h1>Detalle de Boleta</h1>
+            
+<table>
+  
+  
+    <tr>
+      <th>Categoria</th>
+      <th>Producto</th>
+      <th>Precio</th>
+      <th>%Subscriptor</th>
+      <th>%Oferta</th>
+      <th>%Desc. total</th>
+      <th>Descuentos</th>
+      <th>Precio a pagar</th>
+    </tr>
+    <tr>
+      <td>Perro</td>
+      <td>Saco Royal Canin 3kg </td>
+      <td>8.000</td>
+      <td>5%</td>
+      <td>5%</td>
+      <td>10%</td>
+      <td>800</td>
+      <td>7.200</td>
+    </tr>
+    <tr>
+      <td>Gato</td>
+      <td>Royal Cat </td>
+      <td>9.000</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>00%</td>
+      <td>0</td>
+      <td>9.000</td>
+    </tr>
+
+    <tr>
+      <td>Gato</td>
+      <td>Saco Royal cat </td>
+      <td>9.000</td>
+      <td>5%</td>
+      <td>5%</td>
+      <td>10%</td>
+      <td>800</td>
+      <td>8.200</td>
+    </tr>
+
+
+    <tr>
+      <td>Perro</td>
+      <td>Hueso Juguete </td>
+      <td>2.000</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>0%</td>
+      <td>0</td>
+      <td>2.000</td>
+      </tr>
+
+      
+  </table>
+
+  <div class="container-xl  ">
+    <ul class="demo">
+      <li>Precio Sin IVA</li>
+      <li>Valor del IVA (19%) </li>
+      <li>Total a pagar</li>
+  </ul>
+    <div class="row">
+      <div class="card">
+   
+
+    
+    <p class="p-inicio">
+        
+    </DIV>
+  </div>
+</div>
+</div>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script> 
-</body>
-<!-- Footer -->
+
+
+  <!-- Footer -->
 <footer class="text-center text-lg-start bg-white text-muted">
     <hr>
      <!-- Section:   -->
@@ -226,4 +231,6 @@
      <!-- Copyright -->
    </footer>
    <!-- Footer -->
+
+</body>
 </html>
