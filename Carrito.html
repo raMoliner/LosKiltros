@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="JS/Script.js"></script>
+    <title>Carrito de compras</title>
+</head>
+<body>
+    <!-- Barra de navegación-->
+    <nav class="navbar navbar-dark navbar-expand-lg opacity-75" style="background-color: darkmagenta;">
+        <div class="container-fluid">
+             <a class="navbar-brand" href="Nosotros.html"> <!-- Logo -->
+                <img src="IMG/logopng.png" alt="Logo" width="45" height="44" class="d-inline-block align-text-top">
+                </a> 
+          <a class="navbar-brand" href="Nosotros.html">LOS KILTROS</a> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="home" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a><!--Inicio-->
+                  </li>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Nosotros.html">Sobre Nosotros</a> <!--Registro-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="misDatos.html">Mis Datos</a> <!-- Mis datos -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="misCompras.html">Mis Compras anteriores</a> <!-- Mis Compras -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Index.html">Cerrar Sesión</a> <!-- Cierre Sesión -->
+              </li>
+            </ul>
+            <form class="d-flex" role="search"> <!--Barra de Busqueda-->
+              <input class="form-control me-2" type="search" placeholder="Comida, juguetes, ropa..." aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <section class="h-100 h-custom" style="background-color: rgba(0, 0, 0, 0.025)">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12">
+              <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+                <div class="card-body p-0">
+                  <div class="row g-0">
+                    <div class="col-lg-8">
+                      <div class="p-5">
+                        <div class="d-flex justify-content-between align-items-center mb-5">
+                          <h1 class="fw-bold mb-0 text-black">Carrito de Compras</h1>
+                          <h6 class="mb-0 text-muted">3 Productos</h6>
+                        </div>
+                        <hr class="my-4">
+      
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="IMG/cpp 1.jpg"
+                              class="img-fluid rounded-3" alt="Comida Pedigree">
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-3">
+                            <h6 class="text-muted">Comida Para Perro, Adulto</h6>
+                            <h6 class="text-black mb-0">Pedigree</h6>
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+      
+                            <input id="form1" min="0" name="quantity" value="1" type="number"
+                              class="form-control form-control-sm" />
+      
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <h6 class="mb-0">$ 24.000</h6>
+                          </div>
+                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                            <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                          </div>
+                        </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="IMG/cpp2.jpg"
+                              class="img-fluid rounded-3" alt="Comida Perro">
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-3">
+                            <h6 class="text-muted">Comida para perro, Adulto
+                            </h6>
+                            <h6 class="text-black mb-0">Champion Dog</h6>
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+      
+                            <input id="form1" min="0" name="quantity" value="1" type="number"
+                              class="form-control form-control-sm" />
+      
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <h6 class="mb-0">$ 24.000</h6>
+                          </div>
+                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                            <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                          </div>
+                        </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="row mb-4 d-flex justify-content-between align-items-center">
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="IMG/cpp3.jpg"
+                              class="img-fluid rounded-3" alt="Comida Perro">
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-3">
+                            <h6 class="text-muted">Comida para Perro, Adulto</h6>
+                            <h6 class="text-black mb-0">Dog Chow</h6>
+                          </div>
+                          <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                              <i class="fas fa-minus"></i>
+                            </button>
+      
+                            <input id="form1" min="0" name="quantity" value="1" type="number"
+                              class="form-control form-control-sm" />
+      
+                            <button class="btn btn-link px-2"
+                              onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                              <i class="fas fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <h6 class="mb-0">$ 24.000</h6>
+                          </div>
+                          <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                            <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                          </div>
+                        </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="pt-5">
+                          <h6 class="mb-0"><a href="Index.html" class="text-body"><i
+                                class="fas fa-long-arrow-alt-left me-2"></i>Volver a la tienda</a></h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 bg-grey">
+                      <div class="p-5">
+                        <h3 class="fw-bold mb-5 mt-2 pt-1">Total</h3>
+                        <hr class="my-4">
+      
+                        <div class="d-flex justify-content-between mb-4">
+                          <h5 class="text-uppercase">3 Productos</h5>
+                          <h5>$ 72.000</h5>
+                        </div>
+      
+                        <h5 class="text-uppercase mb-3">Envío<h5>
+      
+                        <div class="mb-4 pb-2">
+                          <select class="select">
+                            <option value="1">Los Kiltros</option>
+                            <option value="2">DHL</option>
+                            <option value="3">FedEx</option>
+                            <option value="4">Starken</option>
+                          </select>
+                        </div>
+      
+                        <h5 class="text-uppercase mb-3">Código de Promo</h5>
+      
+                        <div class="mb-5">
+                          <div class="form-outline">
+                            <input type="text" id="form3Examplea2" class="form-control form-control-lg" />
+                            <label class="form-label" for="form3Examplea2">Introduce el código</label>
+                          </div>
+                        </div>
+      
+                        <hr class="my-4">
+      
+                        <div class="d-flex justify-content-between mb-5">
+                          <h5 class="text-uppercase">Precio Total</h5>
+                          <h5>$ 72.000</h5>
+                        </div>
+      
+                        <button type="button" class="btn btn-dark btn-block btn-lg"
+                          data-mdb-ripple-color="dark">Pagar</button>
+      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script> 
+</body>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+    <hr>
+     <!-- Section:   -->
+     <section class="">
+       <div class="container text-center text-md-start mt-5">
+         <!-- Grid row -->
+         <div class="row mt-3">
+           <!-- Grid column -->
+           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+             <!-- Content -->
+             <h6 class="text-uppercase fw-bold mb-4">
+               <i class="fas fa-gem me-3 text-secondary"></i>LOS KILTROS
+             </h6>
+             <p>
+               No olvides de visitar a nuestros negocios aliados y visitarnos en redes sociales.
+             </p>
+           </div>
+           <!-- Grid column -->
+   
+           <!-- Grid column -->
+           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+             <!-- Links -->
+             <h6 class="text-uppercase fw-bold mb-4">
+               Otros servicios:
+             </h6>
+             <p>
+               <a href="#!" class="text-reset">Peluquería</a>
+             </p>
+             <p>
+               <a href="#!" class="text-reset">Guardería</a>
+             </p>
+             <p>
+               <a href="#!" class="text-reset">Paseadores de perro</a>
+             </p>
+             <p>
+               <a href="#!" class="text-reset">Hotelería</a>
+             </p>
+           </div>
+           <!-- Grid column -->
+   
+           <!-- Grid column -->
+           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+             <!-- Links -->
+             <h6 class="text-uppercase fw-bold mb-4">
+               Redes Sociales
+             </h6>
+             <p>
+               <a href="#!" class="text-reset">Instagram</a>
+             </p>
+             <p>
+               <a href="#!" class="text-reset">Facebook</a>
+             </p>
+             <p>
+               <a href="#!" class="text-reset">Twitter</a>
+             </p>
+             <p>
+               <a href="#!" class="text-reset">Tik Tok</a>
+             </p>
+           </div>
+           <!-- Grid column -->
+   
+           <!-- Grid column -->
+           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+             <!-- Links -->
+             <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+             <p><i class="fas fa-home me-3 text-secondary"></i> General Arturo Vidaurre 1900, Chillán, Chile</p>
+             <p>
+               <i class="fas fa-envelope me-3 text-secondary"></i>
+               contacto@losk.com
+             </p>
+             <p><i class="fas fa-phone me-3 text-secondary"></i> + 56 9 9000 8000</p>
+             <p><i class="fas fa-print me-3 text-secondary"></i> + 22 2299 9943</p>
+           </div>
+           <!-- Grid column -->
+         </div>
+         <!-- Grid row -->
+       </div>
+     </section>
+     <!-- Section: Links  -->
+   
+     <!-- Copyright -->
+     <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+       © 2023 Copyright:
+       <a class="text-reset fw-bold" href="#">mMedia</a>
+     </div>
+     <!-- Copyright -->
+   </footer>
+   <!-- Footer -->
+</html>
