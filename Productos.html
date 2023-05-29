@@ -59,106 +59,152 @@
   <div class="container">
     <div class="d-flex justify-content-center">
       <p>
-      <h1>Mantenedor de Productos</h1>
+     <h1>Mantenedor de Productos</h1>
       </p>
     </div>
   </div>
 
+  
   <div class="container-fluid">
-    <form method="POST" id="formulario1" action="recibir_datos">
-      <div class="col-md-6">
-        <label for="inputRut" class="form-label">ID</label>
-        <input type="text" class="form-control" id="id" name="id">
+    <form action="row g-3 needs-validation" method="POST" id="formulario1" action="recibir_datos">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-sm-12 col-md-6">     
+                    
+                
+                    
+            
+        <div class="mb-3 fw-bold">
+            <label for="inputId" class="form-label">ID</label>
+            <input type="text" name="id" class="form-control" id="id">
+          </div>
+                              
+          <div class="col-md-6 fw-bold">
+            <label for="inputCategoria" class="form-label">Categoria</label>
+      <select class="form-select"name="categoria" aria-label="Categoria">
+        <option selected>Perro</option>
+        <option value="1">Gato</option>
+        <option value="2">Loro</option>
+        <option value="3">Hamster</option>
+      </select>
+          
+
+      <div class="mb-3 fw-bold">
+        <label for="inputRut" class="form-label">RUT</label>
+        <input type="text" name="rut" class="form-control" id="rut" placeholder="12345678-7">
       </div>
-      <div class="col-md-6">
+      
+      <div class="mb-3 fw-bold">
         <label for="inputNombre" class="form-label">Nombre(s)</label>
-        <input type="text" class="form-control" id="nombre" name="nombre">
+        <input type="text" name="nombre" class="form-control" id="nombre">
+      </div>
+      <div class="mb-3 fw-bold">
+        <label for="inputApellido" class="form-label">Apellidos</label>
+        <input type="text" name="apellido" class="form-control" id="apellido">
+      </div>
+      <div class="mb-3 fw-bold">
+        <label for="inputCorreo" class="form-label">Correo</label>
+        <input type="email" name="correo" class="form-control" id="correo" placeholder="nombre@correo.com">
+      </div>
+      <div class="col-12 fw-bold">
+        <label for="inputDireccion" class="form-label">Dirección</label>
+        <input type="text" name="direccion" class="form-control" id="direccion" placeholder="Siempre Viva 123 Depto 1">
+      </div>
+      <div class="col-12 fw-bold">
+        <label>Contraseña</label>
+        <div class="input-group" id="show_hide_password">
+          <input class="form-control" type="password" name="password" id="password" placeholder="Minimo 5 cáracteres"> 
+          <div class="input-group-addon">
+            <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-12 fw-bold">
+        <label class="col-form-label col-sm-2 pt-0 ">Con subscripcion</label>
+        <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Deseo subscribirme con un aporte de $3000 pesos mensuales y
+            obtener un 5% de descuento en mis compras.
+          </label>
+        </div>
+    </div>
+      </div>
+      </div>
+      
+
+
       </div>
 
-      <div class="col-12">
-        <label for="inputCorreo" class="form-label">Descripcion</label>
-        <input type="text" class="form-control" id="descripcion" name="descripcion">
-      </div>
-
-      <div class="col-12">
-        <label for="inputDireccion" class="form-label">Precio</label>
-        <input type="text" class="form-control" id="precio" name="precio" placeholder="$8.000">
-      </div>
-      <div class="col-md-6">
-        <label for="inputCiudad" class="form-label">Descuento Suscriptor</label>
-        <input type="text" class="form-control" id="descuentosus" name="descuentosus"placeholder="5%">
-      </div>
-
-      <div class="col-md-6">
-        <label for="inputCiudad" class="form-label">Descuento Por Oferta</label>
-        <input type="text" class="form-control" id="descuentof" name="descuentof" placeholder="2%">
-
-      </div>
-
-
-      <div class="contenedor">
-        <div class="cuadro"></div>
-        <button class="boton">Examinar</button>
-      </div>
+      
 
       <div class="col-12">
         <button type="submit" class="btn btn-primary">Guardar</button>
         <button type="submit" class="btn btn-primary">Nuevo</button>
-        <button type="submit" class="btn btn-primary">Limpiar</button>
+        <button type="submit" class="btn btn-primary">Eliminar</button>
       </div>
     </form>
   </div>
 
+  <section>
+    <div class="container">
+      <div class="d-flex justify-content-center">
 
-  <table>
-    <tr>
-      <th>ID</th>
-      <th>Categoria</th>
-      <th>Nombre</th>
-      <th>Descripcion</th>
-      <th>Precio</th>
-      <th>% Desc. Suscriptor</th>
-      <th>% Desc Oferta</th>
-    </tr>
-    <tr>
-      <td>423</td>
-      <td>Perro</td>
-      <td>Saco Alimento Para Perros</td>
-      <td>Royal Canin </td>
-      <td>$7.000</td>
-      <td>%5</td>
-      <td>%2</td>
-    </tr>
-    <tr>
-      <td>521</td>
-      <td>Gato</td>
-      <td>Saco Alimento Para Gatos</td>
-      <td>Royal Cat </td>
-      <td>$9.000</td>
-      <td>%5</td>
-      <td>%2</td>
-    </tr>
+        <table>
+          <tr>
+            <th>ID</th>
+            <th>Tipo Usuario</th>
+            <th>RUT</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Correo</th>
+            <th>Direccion</th>
+            <th>Con Subscripcion</th>
+            <th>Imagen</th>
+          </tr>
+          <tr>
+            <td>423</td>
+            <td>Administrador</td>
+            <td>12.122.221-1</td>
+            <td>Mauricio</td>
+            <td>Martinez</td>
+            <td>correo@correo.com</td>
+            <td>Calle 1111</td>
+            <td>sí</td>
+          </tr>
 
-    <tr>
-      <td>128</td>
-      <td>Hamster</td>
-      <td>Saco Alimento Hamster</td>
-      <td>Migralli</td>
-      <td>$8.000</td>
-      <td>%5</td>
-      <td>%2</td>
-    </tr>
+          <tr>
+            <td>521</td>
+            <td>Cliente</td>
+            <td>13.331.111-3</td>
+            <td>Mauricio</td>
+            <td>Martinez</td>
+            <td>correo@correo.com</td>
+            <td>Calle 1111</td>
+            <td>no</td>
+          </tr>
 
-
-    <tr>
-      <td>321</td>
-      <td>Accesorios</td>
-      <td>Pelota</td>
-      <td>Pelotinhi </td>
-      <td>$4.000</td>
-      <td>%5</td>
-      <td>%2</td>
-    </tr>
+          <tr>
+            <td>128</td>
+            <td>Cliente</td>
+            <td>11.111.111-1</td>
+            <td>Mauricio</td>
+            <td>Martinez</td>
+            <td>correo@correo.com</td>
+            <td>Calle 1111</td>
+            <td>sí</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
 
 
   </table>
