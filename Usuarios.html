@@ -73,51 +73,76 @@
 
 
   <div class="container-fluid">
-    <form method="POST" id="formulario1" action="recibir_datos">
-      <div class="col-md-6">
+    <form action="row g-3 needs-validation" method="POST" id="formulario1" action="recibir_datos">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-sm-12 col-md-6">     
+                
+            
+        <div class="mb-3 fw-bold">
+            <label for="inputId" class="form-label">ID</label>
+            <input type="text" name="id" class="form-control" id="id">
+          </div>
+          
+          <!--Radio button-->
+          <fieldset class="mb-3 fw-bold">
+            <legend class="col-form-inline-label col-sm-2 pt-0">Tipo de usuario</legend>
+            <div class="col-sm-12-inline">
+              <div class="form-check-inline">
+                <input class="mb-3 fw-bold form-check-input" type="radio" name="inlineTipoDeUsuario" id="inlineTipoDeUsuario1" value="option1" checked>
+                <label class="mb-3 fw-bold form-check-label" for="inlineTipoDeUsuario1">
+                  Cliente
+                </label>
+              </div>
+              <div class="form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineTipoDeUsuario" id="inlineTipoDeUsuario2" value="option2">
+                <label class="form-check-label" for="inlineTipoDeUsuario2">
+                  Administrador
+                </label>
+              </div>
+              
+          </fieldset>
+          
+
+      <div class="mb-3 fw-bold">
         <label for="inputRut" class="form-label">RUT</label>
         <input type="text" name="rut" class="form-control" id="rut" placeholder="12345678-7">
       </div>
-      <div class="col-md-6">
+      
+      <div class="mb-3 fw-bold">
         <label for="inputNombre" class="form-label">Nombre(s)</label>
         <input type="text" name="nombre" class="form-control" id="nombre">
       </div>
-      <div class="col-md-6">
+      <div class="mb-3 fw-bold">
         <label for="inputApellido" class="form-label">Apellidos</label>
         <input type="text" name="apellido" class="form-control" id="apellido">
       </div>
-      <div class="col-12">
+      <div class="mb-3 fw-bold">
         <label for="inputCorreo" class="form-label">Correo</label>
         <input type="email" name="correo" class="form-control" id="correo" placeholder="nombre@correo.com">
       </div>
-      <div class="col-12">
+      <div class="col-12 fw-bold">
         <label for="inputDireccion" class="form-label">Dirección</label>
         <input type="text" name="direccion" class="form-control" id="direccion" placeholder="Siempre Viva 123 Depto 1">
       </div>
-      <div class="col-md-6">
-        <label for="inputCiudad" class="form-label">Ciudad</label>
-        <input type="text" name="ciudad" class="form-control" id="ciudad">
-      </div>
-
-      <div class="col-md-6">
+      <div class="col-12 fw-bold">
         <label>Contraseña</label>
         <div class="input-group" id="show_hide_password">
           <input class="form-control" type="password" name="password" id="password" placeholder="Minimo 5 cáracteres"> 
           <div class="input-group-addon">
             <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-      <div class="col-md-6">
-        <label>Repetir Contraseña</label>
-        <div class="input-group" id="show_hide_password">
-          <input class="form-control" type="password" name="password2" id="password2" placeholder="Repetir Contraseña Anterior">
-          <div class="input-group-addon">
-            <a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12">
+      
+      <div class="col-12 fw-bold">
+        <label class="col-form-label col-sm-2 pt-0 ">Con subscripcion</label>
+        <div class="col-sm-10">
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="gridCheck">
           <label class="form-check-label" for="gridCheck">
@@ -125,16 +150,32 @@
             obtener un 5% de descuento en mis compras.
           </label>
         </div>
+    </div>
+      </div>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <table>
+          <tr>
+            <td>
+              <img src="img/user-profile.png" alt="" class="user-image">
+
+
+            </td>
+          </tr>
+          <tr>
+            <td><input type="file" class="form-control"></td>
+          </tr>
+        </table>
+
+
       </div>
 
-      <div class="contenedor">
-        <div class="cuadro"></div>
-        <button class="boton">Examinar</button>
-      </div>
+      
 
       <div class="col-12">
         <button type="submit" class="btn btn-primary">Guardar</button>
-        <button type="submit" class="btn btn-primary">Limpiar</button>
+        <button type="submit" class="btn btn-primary">Nuevo</button>
+        <button type="submit" class="btn btn-primary">Eliminar</button>
       </div>
     </form>
   </div>
@@ -194,6 +235,7 @@
 
 
   </table>
+      
 
   <!-- Footer -->
   <footer class="text-center text-lg-start bg-white text-muted">
