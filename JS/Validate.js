@@ -88,13 +88,15 @@ $(document).ready(function () {
 
       id: "required",
 
-      descripcion : "required",
+      descripcion: "required",
 
-      precio : "required",
+      precio: "required",
 
       descuentosus: "required",
 
-      descuentof:"required",
+      descuentof: "required",
+
+      cantidad: "required",
 
       rut: {
         required: true,
@@ -151,26 +153,29 @@ $(document).ready(function () {
         equalTo: "Debe ser igual al campo contraseña",
       },
 
-      codigo:{
-        required: "debe ingresar un codigo"
+      codigo: {
+        required: "debe ingresar un codigo",
       },
 
-      id:{
-        required: "debe ingresar un id"
+      id: {
+        required: "debe ingresar un id",
       },
 
-      precio:{
-
-        required: "debe ingresar un precio"
+      precio: {
+        required: "debe ingresar un precio",
       },
 
-      descuentosus:{
-        required : "Debe ingresar descuento"
+      descuentosus: {
+        required: "Debe ingresar descuento",
       },
 
-      descuentof:{
-        required :"Debe ingresar descuento"
-      }
+      descuentof: {
+        required: "Debe ingresar descuento",
+      },
+
+      cantidad: {
+        required: "Debe ingresar cantidad",
+      },
     },
   });
 });
