@@ -1,43 +1,3 @@
-$(function () {
-  $("form[name='registration']").validate({
-    rules: {
-      firstname: "required",
-
-      lastname: "required",
-
-      direccion: "required",
-
-      ciudad: "required",
-
-      codigoZip: "required",
-
-      email: {
-        required: true,
-
-        email: true,
-      },
-    },
-
-    messages: {
-      firstname: "Por favor, introduzca su nombre",
-
-      lastname: "Por favor, introduzca su apellido",
-
-      email: "Por favor, introduce una dirección de correo electrónico válida",
-
-      direccion: "Por favor, ingrese una dirección",
-
-      ciudad: "Por favor, ingrese una ciudad",
-
-      codigoZip: "Por favor, ingrese un Código Zip",
-    },
-
-    submitHandler: function (form) {
-      form.submit();
-    },
-  });
-});
-
 $(document).ready(function () {
   $.validator.addMethod(
     "rutChileno",
@@ -102,7 +62,7 @@ $(document).ready(function () {
         required: true,
         rutChileno: true,
       },
-      email: {
+      correo: {
         required: true,
         email: true,
       },
@@ -140,7 +100,7 @@ $(document).ready(function () {
         required: "El rut es un campo obligatorio",
         rutChileno: "El formato del rut no es válido",
       },
-      email: {
+      correo: {
         required: "El email es un campo requerido",
         email: "El email no cumple el formato de un correo",
       },

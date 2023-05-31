@@ -2,7 +2,11 @@ $(document).ready(function () {
   var productContainer = $('#product-container');
 
   $.get('http://fakestoreapi.com/products', function (data) {
-    $.each(data, function (index, product) {
+    var shuffledData = shuffleArray(data); // Resultados distintos 
+    var numProductsToShow = 9; // Número de productos a mostrar
+
+    for (var i = 0; i < numProductsToShow; i++) {
+      var product = shuffledData[i];
       var card = `
         <div class="col-lg-4">
           <div class="card">
@@ -17,6 +21,22 @@ $(document).ready(function () {
         </div>
       `;
       productContainer.append(card);
-    });
+    }
   });
 });
+
+// 
+function shuffleArray(array) {
+  var currentIndex = array.length;
+  var temporaryValue, randomIndex;
+
+  while (currentIndex !== 0) {
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
