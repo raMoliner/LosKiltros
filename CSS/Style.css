@@ -2,3 +2,14 @@
     color: red;
     font-weight: bolder;
  }
+
+ .bg-darkmagenta {
+    background-color: darkmagenta;
+  }
+
+  .btn-darkmagenta {
+   background-color: darkmagenta;
+   
+   color: darkmagenta;
+
+ }
