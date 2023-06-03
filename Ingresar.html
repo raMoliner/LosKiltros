@@ -14,67 +14,49 @@
 <body>
   <header id ="header"></header>
 
-  <!--Sección de formulario de inscripción-->
-  <div class="col">
-    <h1>Ingresar a la tienda</h1> 
+  <div class="container">
+    <h1 class="display-4 text-center">¡Bienvenido a nuestra tienda!</h1>
 </div>
-  <section>
-    <div class="card mb-3">
-      <div class="row g-0 d-flex align-items-center">
-        <div class="col-lg-4 d-none d-lg-flex">
-          <img src="IMG/perrogato.webp" alt="Tienda de Mascotas"
-            class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5" />
-        </div>
-        <div class="col-lg-8">
-          <div class="card-body py-5 px-md-5">
 
-            <form method="POST" id="formulario1" action="recibir_datos">
-              <!-- Input Email -->
-              <div class="form-outline mb-4">
-                <label class="form-label" for="form2Example1">Correo Electrónico</label>
-                <input type="email" id="correo" class="form-control"  name="correo" />
-              </div>
-
-              <!-- Input Contraseña -->
-              <div class="form-outline mb-4">
-                <label class="form-label" for="form2Example2">Contraseña</label>
-                <input type="password" id="password" class="form-control" name="password" />
-              </div>
-
-              <!-- Layout de Grid de 2 columnas -->
-              <div class="row mb-4">
-                <div class="col d-flex justify-content-center">
-                  <!-- Checkbox de Recuerdame -->
-                  <div class="col">
-                    <!-- Link de recuperación -->
-                    <a href="Registro.html">Registrarse</a>
-                  </div>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-sm-12 col-md-8 col-lg-6">
+      <div class="card">
+        <div class="row no-gutters">
+          <div class="col-md-4 d-flex align-items-center">
+            <img src="IMG/perrogato.webp" class="card-img" alt="Imagen de inicio de sesión">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body my-4">
+              <h5 class="card-title">Iniciar sesión</h5>
+              <form id="login-form" action="/login" method="POST">
+                <div class="form-group">
+                  <label for="email">Correo electrónico:</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                  <div id="email-error" class="invalid-feedback">Por favor, ingresa un correo electrónico válido.</div>
                 </div>
-
-                <div class="col">
-                  <!-- Link de recuperación -->
-                  <a href="#!">Olvidaste tu contraseña?</a>
+                <div class="form-group">
+                  <label for="password">Contraseña:</label>
+                  <input type="password" class="form-control" id="password" name="password" required>
+                  <div id="password-error" class="invalid-feedback">Por favor, ingresa tu contraseña.</div>
                 </div>
-              </div>
-
-              <!-- Boton de Ingreso -->
-              <button type="button" class="btn btn-primary btn-block mb-4">Ingresar</button>
-
-            </form>
-
+                <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-
-
+  </div>
+</div>
 
 <footer id ="footer"></footer>
 <!--Bibliotecas-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 <script src="JS/headerYFooter.js"></script>
+<script src="JS/validadorLogin.JS"></script>
 </body>
 
 </html>
+
