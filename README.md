@@ -9,3 +9,12 @@ OJO: No aparecen lás páginas de JS y CSS.
 - Header y Footer dinámicos
 - Api de Ropa
 - Navbar incompleto 
+
+
+02/06/2023
+
+- Navbar Completo
+- Nuevo Ingresar.html
+- Nuevo JS "validarLogin" 
+
+Si pueden testean la validación y me comentan que onda 
