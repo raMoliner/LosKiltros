@@ -18,3 +18,8 @@ OJO: No aparecen lás páginas de JS y CSS.
 - Nuevo JS "validarLogin" 
 
 Si pueden testean la validación y me comentan que onda 
+
+05/06/2023
+
+- Reestructuración del validador del login
+- carrito.html actualizado
