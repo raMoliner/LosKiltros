@@ -24,3 +24,7 @@
   margin-top: 0.25rem;
   display: none;
 }
+
+.demo {
+    list-style: none;
+}
