@@ -23,3 +23,5 @@ Si pueden testean la validación y me comentan que onda
 
 - Reestructuración del validador del login
 - carrito.html actualizado
+- ventas.html actualizado
+
