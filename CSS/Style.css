@@ -20,11 +20,42 @@
 
 .error-message {
   color: red;
-  font-size: 0.875rem;
-  margin-top: 0.25rem;
+  margin-top: 5px;
   display: none;
 }
 
+.error-input {
+  border: 1px solid red;
+}
+
+.error-email {
+  display: none;
+}
+
+
 .demo {
     list-style: none;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 300px;
+}
+.card-body {
+  background-color: #f8f9fa;
+}
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.hr-hidden {
+  margin-top: 30px;
+  border: none;
+}
+
+.p-nosotros {
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
 }
